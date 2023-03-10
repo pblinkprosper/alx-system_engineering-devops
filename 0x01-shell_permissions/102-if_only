@@ -1,2 +1,2 @@
-#!.bin/bash
+#!/bin/bash
 find guillaume chown betty hello
