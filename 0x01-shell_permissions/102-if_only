@@ -1,2 +1,2 @@
 #!/bin/bash
-find guillaume chown betty hello
+chown betty --for=guillaume hello
