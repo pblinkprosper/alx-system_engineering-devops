@@ -1,2 +1,2 @@
 #!/bin/bash
-rev | tr '[A-Za-z}' '[N-Za-Mn-za-m]'
+tr '[A-Za-z}' '[N-Za-Mn-za-m]' | fmt
