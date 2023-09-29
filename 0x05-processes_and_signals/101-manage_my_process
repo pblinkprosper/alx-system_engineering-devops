@@ -10,7 +10,7 @@ if [ "$1" = "start" ];then
 elif [ "$1" = "stop" ];then
     pkill -f ./manage_my_process
     rm $path
-    echo "manage_my_process stopped"
+    echo 'manage_my_process stopped'
 elif [ "$1" = "restart" ];then
      pkill -f ./manage_my_process
      rm $path
