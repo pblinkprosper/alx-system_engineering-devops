@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# List all processes with inheritance and time
+
+ps auxf
