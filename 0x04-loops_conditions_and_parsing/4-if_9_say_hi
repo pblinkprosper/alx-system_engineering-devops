@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
 # A script that prints "Best School" 10 times and Hi once
 
-iter=10
-mod_point=9
-message="Best School"
-i=1
-while [ $i -lt $iter ];
+index=0
+
+while [ $index -lt 10 ]
 do
-	if [ $i -eq $mod_point ];
+	if [ $index -eq 9 ]
 	then
-		echo "Hi";
+		echo "Hi"
 	fi
-	echo "$message"
-	i=$((i+1))
+	echo "Best School"
+	(( index++ ))
 done
