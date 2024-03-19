@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # use ssh to connect to private server
-ssh -i ~/.ssh/school ubuntu@18.234.80.17
+ssh -i ~/.ssh/school ubuntu@54.236.53.74
