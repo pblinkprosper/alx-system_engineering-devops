@@ -19,5 +19,4 @@ def number_of_subscribers(subreddit):
         subscribers = data["data"]["subscribers"]
         return subscribers
     except Exception as e:
-        print(f"Error fetching data for subreddit '{subreddit}': {e}")
-        return None
+        return 0
