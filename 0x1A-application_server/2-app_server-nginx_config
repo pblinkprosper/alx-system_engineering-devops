@@ -4,14 +4,14 @@ server {
 
     # Use IP of server as domain name
 <<<<<<< HEAD
-    server_name 54.208.246.239
+    server_name 100.26.142.252
 
     # Customize HTTP response header
     add_header X-Served-By 228560-web-01;
 
     # Serve /airbnb-onepage/ route on AirBnB_clone_v3
 =======
-    server_name 54.208.246.239;
+    server_name 100.26.142.252;
 
     # Customize HTTP response header
     add_header X-served-By 308825-web-01;
