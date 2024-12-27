@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
-# Gracefully reloads Gunicorn
+# This script gracefully reloads the Gunicorn process
 
-pgrep gunicorn | xargs -I {} kill -HUP {}
+# Get the PID of the Gunicorn master process
+PID=$(pgrep -f 'gunicorn.*master')
+
+if [ -n "$PID" ]; then
+  echo "Reloading Gunicorn (PID: $PID)..."
+  kill -HUP "$PID"
+  echo "Gunicorn reloaded successfully."
+else
+  echo "Gunicorn master process not found."
+fi
+
